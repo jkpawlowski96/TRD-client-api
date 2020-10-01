@@ -1,5 +1,5 @@
 from src import app
 
-@app.route('/')
+@app.route('/help')
 def hello_world():
     return 'Hello, World!'
