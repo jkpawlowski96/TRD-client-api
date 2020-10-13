@@ -1,4 +1,3 @@
-from MetaTrader5 import RES_E_FAIL
 from src import app, api
 from flask_restful import Resource
 from src.data import Data

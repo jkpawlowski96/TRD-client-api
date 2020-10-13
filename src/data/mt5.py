@@ -1,12 +1,13 @@
 from datetime import datetime
 from src.data.api import DataApi
 from src.models import Interval, Pair
-import MetaTrader5 as mt5
+import mt5
 import numpy as np
 
 class MT5(DataApi):
 
-    intervals = {'m1': mt5.TIMEFRAME_M1}
+    intervals = {'m1': mt5.TIMEFRAME_M1,
+                 'm5': 2   }
 
     def __init__(self):
         # connect to MetaTrader 5
