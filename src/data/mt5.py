@@ -1,7 +1,7 @@
 from datetime import datetime
 from src.data.api import DataApi
 from src.models import Interval, Pair
-import MetaTrader5 as mt5
+import mt5
 import numpy as np
 
 class MT5(DataApi):
